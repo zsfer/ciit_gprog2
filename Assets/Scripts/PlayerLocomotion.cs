@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PlayerLocomotion : MonoBehaviour
@@ -32,6 +33,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     void HandleRotation()
     {
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(m_MoveVec), 10 * Time.deltaTime);
+        if (m_MoveVec.magnitude > 0)
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(m_MoveVec), 10 * Time.deltaTime);
     }
 }
