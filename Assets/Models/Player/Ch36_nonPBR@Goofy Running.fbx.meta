@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22913d51f0c286441985dfdcdaccffc7
+guid: 76f78009c0931184fbe7e0bc7e2240d6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Run Forward
+      name: Goofy Running
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 22
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -16,7 +16,7 @@ public class FollowTarget : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         transform.position = Vector3.Lerp(transform.position, Target.position + Offset, Damping * Time.deltaTime);
     }

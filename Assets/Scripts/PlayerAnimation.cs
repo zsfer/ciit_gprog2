@@ -16,6 +16,6 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
-        m_Animator.SetFloat("Speed", m_InputManager.InputVector.normalized.sqrMagnitude, 0.05f, Time.deltaTime);
+        m_Animator.SetFloat("Speed", m_InputManager.InputVector.magnitude, 0.05f, Time.deltaTime);
     }
 }
